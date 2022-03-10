@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 3% 0 3% 3%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+ul, li {
+    list-style-type: none;
+    display: flex;
+    gap: 5%;
+    margin-right: 5%;
+    color: white;
+}
+
+li {
+    cursor:pointer;
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    gap: 69%;
+    margin-bottom: 5%;
+}
+
+span {
+    color: red;
+}
+
+svg {
+    height: 15vh;
+    margin: -9% 0 5% 0%;
+    cursor: pointer;
+    animation: down 1300ms infinite linear;
+}
+
+h1 {
+    font-size: 2em; 
+}
+
+article {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+
+img:first-of-type {
+    width: 65%;
+    margin-top: -10%;
+    z-index:-100;
+    animation: clipping 2500ms ease-out;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    width: 25vw;
+    height: 45vh;
+    font-size: 1.5em;
+    animation: clipping 1s;
+}
+
+.container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+section {
+    height: 25vh;
+    display: flex;
+    width: 90%;
+    margin-bottom: 15%;
+}
+
+.text-bloc {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image {
+    width: 55vw;
+    height: 40vh;
+}
+
+.one {
+    background: no-repeat center/80% url("https://assets.codepen.io/2621168/shoe2.jpg");
+    margin-left: -7%;
+}
+
+.two {
+    background: no-repeat center/80% url("https://assets.codepen.io/2621168/shoe3.jpg");
+}
+
+.three {
+    background: no-repeat center/80% url("https://assets.codepen.io/2621168/shoe4.jpg");
+    margin-left: -7%;
+}
+
+@keyframes down {
+    50% {
+        transform: translateY(15%)
+    }
+}
+
+@keyframes clipping {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
